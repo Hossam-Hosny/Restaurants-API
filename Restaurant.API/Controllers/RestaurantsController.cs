@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Restaurant.Application.Restaurants;
+using Restaurant.Application.Restaurants.DTOs;
 
 namespace Restaurant.API.Controllers
 {
@@ -23,6 +24,17 @@ namespace Restaurant.API.Controllers
             var result = await _restaurantService.GetById(Id);
             if (result is null) { return NotFound($"No Restaurant with that id: {Id}"); }
             return Ok(result);
+        }
+
+        [HttpPost("Create-Restaurant")]
+        public async Task<IActionResult> CreateRestaurant([FromBody] CreateRestaurantDTO dto )
+        {
+
+            Guid id = await _restaurantService.Create(dto);
+            return CreatedAtAction(nameof(GetById), new { id }, null);
+
+
+
         }
 
 

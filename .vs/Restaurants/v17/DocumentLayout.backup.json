@@ -3,39 +3,71 @@
   "WorkspaceRootPath": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.api\\restaurant.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\restaurant.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.api\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RestaurantsDB/True/SqlTable/dbo.Restaurants.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurants\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurants\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.infrastructure\\repositories\\restaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|solutionrelative:restaurant.infrastructure\\repositories\\restaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\repositories\\irestaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\repositories\\irestaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\dishes\\dtos\\dishdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\dishes\\dtos\\dishdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\dishes\\dtos\\dishprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\dishes\\dtos\\dishprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurants\\dtos\\restaurantprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\dtos\\restaurantprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurants\\dtos\\restaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\dtos\\restaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.api\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\controllers\\restaurantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurants\\dtos\\createrestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\dtos\\createrestaurantdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\repositories\\irestaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\repositories\\irestaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurants\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurants\\irestaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\entities\\restaurantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\entities\\restaurantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurant.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurant.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.api\\restaurant.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\restaurant.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RestaurantsDB/True/SqlTable/dbo.Restaurants.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,24 +78,12 @@
       "RelativeMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|solutionrelative:restaurant.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.application\\restaurant.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FC225273-6670-43FF-A955-A71E80D2049E}|Restaurant.Application\\Restaurant.Application.csproj|solutionrelative:restaurant.application\\restaurant.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.infrastructure\\restaurant.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|solutionrelative:restaurant.infrastructure\\restaurant.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\restaurant.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\restaurant.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Migrations\\20250215101846_Adding_KiloCalories_Column_To_DishTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Restaurant.Infrastructure\\Migrations\\20250215101846_Adding_KiloCalories_Column_To_DishTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.infrastructure\\seeders\\restaurantseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,10 +98,6 @@
       "RelativeMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\restaurant.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Migrations\\20250215094132_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Restaurant.Infrastructure\\Migrations\\20250215094132_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{77F5BCF1-0A7E-43C4-B64C-E96E616C84FA}|Restaurant.API\\Restaurant.API.csproj|solutionrelative:restaurant.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -90,8 +106,12 @@
       "RelativeMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|solutionrelative:restaurant.infrastructure\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.domain\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9E5AAFD-97C6-4C27-BBBE-926EC8E7A615}|Restaurant.Domain\\Restaurant.Domain.csproj|solutionrelative:restaurant.domain\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.infrastructure\\migrations\\20250215101846_adding_kilocalories_column_to_dishtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|solutionrelative:restaurant.infrastructure\\migrations\\20250215101846_adding_kilocalories_column_to_dishtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|e:\\building dotnet 8 apis in clean architecture, user identity system and azure deployment using cicd \u002B practical exercises\\restaurants\\restaurant.infrastructure\\migrations\\20250215094132_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57C5FB78-2B67-4B1D-9F49-59FB3CF23B66}|Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj|solutionrelative:restaurant.infrastructure\\migrations\\20250215094132_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -101,7 +121,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,12 +134,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DishDTO.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Dishes\\DTOs\\DishDTO.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Dishes\\DTOs\\DishDTO.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Dishes\\DTOs\\DishDTO.cs",
+              "RelativeToolTip": "Restaurant.Application\\Dishes\\DTOs\\DishDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T18:44:26.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dish.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Dish.cs",
+              "RelativeDocumentMoniker": "Restaurant.Domain\\Entities\\Dish.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Dish.cs",
+              "RelativeToolTip": "Restaurant.Domain\\Entities\\Dish.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:42:53.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DishProfile.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Dishes\\DTOs\\DishProfile.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Dishes\\DTOs\\DishProfile.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Dishes\\DTOs\\DishProfile.cs",
+              "RelativeToolTip": "Restaurant.Application\\Dishes\\DTOs\\DishProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T19:03:21.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "RestaurantService.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\RestaurantService.cs",
               "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\RestaurantService.cs",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\RestaurantService.cs",
               "RelativeToolTip": "Restaurant.Application\\Restaurants\\RestaurantService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T10:25:06.285Z",
               "EditorCaption": ""
@@ -127,107 +186,171 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RestaurantsController.cs",
-              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Controllers\\RestaurantsController.cs",
-              "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\RestaurantsController.cs",
-              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Controllers\\RestaurantsController.cs",
-              "RelativeToolTip": "Restaurant.API\\Controllers\\RestaurantsController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:22:26.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Restaurant.API.http",
-              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Restaurant.API.http",
-              "RelativeDocumentMoniker": "Restaurant.API\\Restaurant.API.http",
-              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Restaurant.API.http",
-              "RelativeToolTip": "Restaurant.API\\Restaurant.API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-15T10:47:09.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Restaurants [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RestaurantsDB/True/SqlTable/dbo.Restaurants.sql",
-              "ToolTip": "dbo.Restaurants [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-02-15T10:15:54.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRestaurantService.cs",
-              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\IRestaurantService.cs",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\IRestaurantService.cs",
-              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\IRestaurantService.cs",
-              "RelativeToolTip": "Restaurant.Application\\Restaurants\\IRestaurantService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:45:22.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "RestaurantsRepository.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Repositories\\RestaurantsRepository.cs",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\Repositories\\RestaurantsRepository.cs",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Repositories\\RestaurantsRepository.cs",
               "RelativeToolTip": "Restaurant.Infrastructure\\Repositories\\RestaurantsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T10:31:14.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IRestaurantsRepository.cs",
-              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
-              "RelativeDocumentMoniker": "Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
-              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
-              "RelativeToolTip": "Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RestaurantProfile.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\DTOs\\RestaurantProfile.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\DTOs\\RestaurantProfile.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\DTOs\\RestaurantProfile.cs",
+              "RelativeToolTip": "Restaurant.Application\\Restaurants\\DTOs\\RestaurantProfile.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T10:27:01.39Z",
+              "WhenOpened": "2025-02-15T18:56:12.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RestaurantDTO.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\DTOs\\RestaurantDTO.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\DTOs\\RestaurantDTO.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\DTOs\\RestaurantDTO.cs",
+              "RelativeToolTip": "Restaurant.Application\\Restaurants\\DTOs\\RestaurantDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T18:39:32.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "RestaurantsController.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "RelativeDocumentMoniker": "Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "RelativeToolTip": "Restaurant.API\\Controllers\\RestaurantsController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:22:26.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateRestaurantDTO.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\DTOs\\CreateRestaurantDTO.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\DTOs\\CreateRestaurantDTO.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\DTOs\\CreateRestaurantDTO.cs",
+              "RelativeToolTip": "Restaurant.Application\\Restaurants\\DTOs\\CreateRestaurantDTO.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T19:16:54.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "Restaurant.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeToolTip": "Restaurant.Application\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T10:39:03.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "IRestaurantsRepository.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "RelativeDocumentMoniker": "Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "RelativeToolTip": "Restaurant.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:27:01.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRestaurantService.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\IRestaurantService.cs",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurants\\IRestaurantService.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurants\\IRestaurantService.cs",
+              "RelativeToolTip": "Restaurant.Application\\Restaurants\\IRestaurantService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T10:45:22.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Address.cs",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "Restaurant.Domain\\Entities\\Address.cs",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Address.cs",
+              "RelativeToolTip": "Restaurant.Domain\\Entities\\Address.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T20:40:30.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "RestaurantModel.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\RestaurantModel.cs",
               "RelativeDocumentMoniker": "Restaurant.Domain\\Entities\\RestaurantModel.cs",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\RestaurantModel.cs",
               "RelativeToolTip": "Restaurant.Domain\\Entities\\RestaurantModel.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T20:37:13.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
+              "Title": "Restaurant.Application.csproj",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurant.Application.csproj",
+              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurant.Application.csproj",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurant.Application.csproj",
+              "RelativeToolTip": "Restaurant.Application\\Restaurant.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-15T10:24:52.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Restaurant.API.http",
+              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Restaurant.API.http",
+              "RelativeDocumentMoniker": "Restaurant.API\\Restaurant.API.http",
+              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Restaurant.API.http",
+              "RelativeToolTip": "Restaurant.API\\Restaurant.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-15T10:47:09.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dbo.Restaurants.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RestaurantsDB/True/SqlTable/dbo.Restaurants.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/RestaurantsDB/True/SqlTable/dbo.Restaurants.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-15T10:15:54.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Program.cs",
               "RelativeDocumentMoniker": "Restaurant.API\\Program.cs",
@@ -240,34 +363,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
               "RelativeToolTip": "Restaurant.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABYAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwBYAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T09:26:28.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Restaurant.Application",
-              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurant.Application.csproj",
-              "RelativeDocumentMoniker": "Restaurant.Application\\Restaurant.Application.csproj",
-              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Application\\Restaurant.Application.csproj",
-              "RelativeToolTip": "Restaurant.Application\\Restaurant.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-15T10:24:52.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Restaurant.Infrastructure",
+              "DocumentIndex": 19,
+              "Title": "Restaurant.Infrastructure.csproj",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Restaurant.Infrastructure.csproj",
@@ -279,8 +389,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Restaurant.Domain",
+              "DocumentIndex": 20,
+              "Title": "Restaurant.Domain.csproj",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Restaurant.Domain.csproj",
               "RelativeDocumentMoniker": "Restaurant.Domain\\Restaurant.Domain.csproj",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Restaurant.Domain.csproj",
@@ -292,20 +402,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "20250215101846_Adding_KiloCalories_Column_To_DishTable.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Migrations\\20250215101846_Adding_KiloCalories_Column_To_DishTable.cs",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\Migrations\\20250215101846_Adding_KiloCalories_Column_To_DishTable.cs",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Migrations\\20250215101846_Adding_KiloCalories_Column_To_DishTable.cs",
               "RelativeToolTip": "Restaurant.Infrastructure\\Migrations\\20250215101846_Adding_KiloCalories_Column_To_DishTable.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAABQwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T10:18:46.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "RestaurantSeeder.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Seeders\\RestaurantSeeder.cs",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\Seeders\\RestaurantSeeder.cs",
@@ -318,20 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Dish.cs",
-              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Dish.cs",
-              "RelativeDocumentMoniker": "Restaurant.Domain\\Entities\\Dish.cs",
-              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Dish.cs",
-              "RelativeToolTip": "Restaurant.Domain\\Entities\\Dish.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T20:42:53.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "IRestaurantSeeder.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Seeders\\IRestaurantSeeder.cs",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\Seeders\\IRestaurantSeeder.cs",
@@ -344,8 +441,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Restaurant.API",
+              "DocumentIndex": 23,
+              "Title": "Restaurant.API.csproj",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Restaurant.API.csproj",
               "RelativeDocumentMoniker": "Restaurant.API\\Restaurant.API.csproj",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\Restaurant.API.csproj",
@@ -357,20 +454,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "20250215094132_Initial.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Migrations\\20250215094132_Initial.cs",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\Migrations\\20250215094132_Initial.cs",
               "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\Migrations\\20250215094132_Initial.cs",
               "RelativeToolTip": "Restaurant.Infrastructure\\Migrations\\20250215094132_Initial.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T09:41:32.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Restaurant.API\\appsettings.Development.json",
@@ -383,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Infrastructure\\DbContexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Restaurant.Infrastructure\\DbContexts\\AppDbContext.cs",
@@ -392,19 +489,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T08:54:25.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Address.cs",
-              "DocumentMoniker": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Address.cs",
-              "RelativeDocumentMoniker": "Restaurant.Domain\\Entities\\Address.cs",
-              "ToolTip": "E:\\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD \u002B practical exercises\\Restaurants\\Restaurant.Domain\\Entities\\Address.cs",
-              "RelativeToolTip": "Restaurant.Domain\\Entities\\Address.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T20:40:30.724Z",
               "EditorCaption": ""
             }
           ]
