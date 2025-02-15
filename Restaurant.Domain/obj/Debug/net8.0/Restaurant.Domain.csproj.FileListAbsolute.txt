@@ -1,0 +1,12 @@
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\bin\Debug\net8.0\Restaurant.Domain.deps.json
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\bin\Debug\net8.0\Restaurant.Domain.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\bin\Debug\net8.0\Restaurant.Domain.pdb
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.AssemblyInfoInputs.cache
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.AssemblyInfo.cs
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.csproj.CoreCompileInputs.cache
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.sourcelink.json
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\refint\Restaurant.Domain.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\Restaurant.Domain.pdb
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Domain\obj\Debug\net8.0\ref\Restaurant.Domain.dll

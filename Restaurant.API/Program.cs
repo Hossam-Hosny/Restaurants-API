@@ -1,3 +1,7 @@
+using Restaurant.Application.Extensions;
+using Restaurant.Infrastructure.Extensions;
+using Restaurant.Infrastructure.Seeders;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +11,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+// Adding Services of Infrastructure Layer 
+
+builder.Services.AddInfrastrucdure(builder.Configuration);
+
+// Adding Services of Application Layer 
+builder.Services.AddApplicationServices();
+
+
+
+
 var app = builder.Build();
+// Seeding data if Any() => is false (Restaurants table is empty) 
+var scope = app.Services.CreateScope();
+var seeder = scope.ServiceProvider.GetRequiredService<IRestaurantSeeder>();
+await seeder.Seed();
+
 
 if (app.Environment.IsDevelopment())
 {

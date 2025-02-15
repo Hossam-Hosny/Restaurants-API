@@ -1,5 +1,12 @@
 @Restaurant.API_HostAddress = https://localhost:7218
 
-GET {{Restaurant.API_HostAddress}}/weatherforecast
+#
+
+GET {{Restaurant.API_HostAddress}}/api/restaurants/Get-All-Restauratns
+
+###
+
+@Id=9b79b8d9-d544-4b07-9939-08dd4da98c78
+GET {{Restaurant.API_HostAddress}}/api/Restaurants/{{Id}}
 
 ###
