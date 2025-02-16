@@ -35,4 +35,18 @@ internal class RestaurantsRepository(AppDbContext _db) : IRestaurantsRepository
 
 
     }
+
+  
+
+    public async Task DeleteRestaurant(RestaurantModel model)
+    {
+        _db.Restaurants.Remove(model);
+        await _db.SaveChangesAsync();
+    }
+
+    public async Task UpdateRestaurant(RestaurantModel model)
+    {
+        _db.Restaurants.Update(model);
+        await _db.SaveChangesAsync();
+    }
 }

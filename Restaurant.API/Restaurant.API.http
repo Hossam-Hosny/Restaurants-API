@@ -1,4 +1,4 @@
-@Restaurant.API_HostAddress = https://localhost:7218
+@Restaurant.API_HostAddress = https://localhost:44320
 
 #
 
@@ -9,4 +9,42 @@ GET {{Restaurant.API_HostAddress}}/api/restaurants/Get-All-Restauratns
 @Id=9b79b8d9-d544-4b07-9939-08dd4da98c78
 GET {{Restaurant.API_HostAddress}}/api/Restaurants/{{Id}}
 
+###
+
+POST {{Restaurant.API_HostAddress}}/api/restaurants/Create-Restaurant
+Content-Type: application/json
+
+{
+  "name": "hi",
+  "description": "",
+  "category": "Egyption",
+  "hasDelivery": true,
+  "contactEmail": "this is an email",
+  "contactNumber": "string",
+  "city": "string",
+  "street": "string",
+  "postalCode": "123",
+  "dishes": [
+    {
+      "name": "string",
+      "description": "string",
+      "price": 0,
+      "kiloCalories": 0
+    }
+  ]
+}
+
+###
+@Id=9b79b8d9-d544-4b07-9939-08dd4da98c78
+DELETE {{Restaurant.API_HostAddress}}/api/Restaurants/{{Id}}
+
+###
+@Id=9b79b8d9-d544-4b07-9939-08dd4da98c78
+PATCH {{Restaurant.API_HostAddress}}/api/Restaurants/{{Id}}content-type = application/
+
+{
+  Name:"Hossam",
+  Description :"This is a description",
+  HasDelivery:false
+}
 ###

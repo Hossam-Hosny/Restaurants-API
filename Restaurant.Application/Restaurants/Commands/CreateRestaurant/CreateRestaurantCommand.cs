@@ -1,17 +1,19 @@
-﻿using Restaurant.Application.Dishes.DTOs;
-using Restaurant.Domain.Entities;
+﻿using MediatR;
+using Restaurant.Application.Dishes.DTOs;
 
-namespace Restaurant.Application.Restaurants.DTOs;
+namespace Restaurant.Application.Restaurants.Commands.CreateRestaurant;
 
-public class CreateRestaurantDTO
+public class CreateRestaurantCommand : IRequest<Guid>
 {
 
     public string Name { get; set; } = default!;
     public string Description { get; set; } = default!;
+
     public string Category { get; set; } = default!;
     public bool HasDelivery { get; set; }
 
     public string? ContactEmail { get; set; }
+
     public string? ContactNumber { get; set; }
 
     public string? City { get; set; }
