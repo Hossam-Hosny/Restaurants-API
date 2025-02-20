@@ -53,6 +53,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Restaurant.API.Controllers.DishesController",
+    "Method": "CreateDish",
+    "RelativePath": "api/Restaurants/{restaurantId}/Dishes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "restaurantId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "command",
+        "Type": "Restaurant.Application.Dishes.Commands.CreateDish.CreateDishCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Restaurant.API.Controllers.RestaurantsController",
     "Method": "CreateRestaurant",
     "RelativePath": "api/Restaurants/Create-Restaurant",

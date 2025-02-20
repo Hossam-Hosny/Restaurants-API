@@ -1,4 +1,4 @@
-@Restaurant.API_HostAddress = https://localhost:44320
+@Restaurant.API_HostAddress = http://localhost:5180
 
 #
 
@@ -47,4 +47,13 @@ PATCH {{Restaurant.API_HostAddress}}/api/Restaurants/{{Id}}content-type = applic
   Description :"This is a description",
   HasDelivery:false
 }
+###
+
+POST {{Restaurant.API_HostAddress}}/api/Restaurants/{restaurantId}/dishes
+Content-Type: application/json
+
+{
+  //CreateDishCommand
+}
+
 ###

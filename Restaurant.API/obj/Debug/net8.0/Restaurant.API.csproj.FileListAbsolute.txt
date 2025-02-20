@@ -183,3 +183,16 @@ E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure 
 E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\MediatR.dll
 E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\MediatR.Contracts.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.AspNetCore.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\bin\Debug\net8.0\Serilog.Sinks.File.dll

@@ -1,0 +1,716 @@
+2025-02-19 07:19:01.306 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 07:19:01.562 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 07:19:01.586 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 07:19:05.272 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 07:19:05.747 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 07:19:09.411 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 326.4288 ms
+2025-02-19 07:19:14.319 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 22.6298 ms
+2025-02-19 07:19:35.205 +02:00 [INF] Getting all Restaurants (we are in Restaurant Service )
+2025-02-19 07:19:35.732 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM [Restaurants] AS [r]
+LEFT JOIN [Dishes] AS [d] ON [r].[Id] = [d].[RestaurantId]
+ORDER BY [r].[Id]
+2025-02-19 07:19:36.075 +02:00 [INF] HTTP GET /api/Restaurants/Get-All-Restauratns responded 200 in 1167.2226 ms
+2025-02-19 07:29:13.481 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 07:29:13.655 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 07:29:13.679 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 07:29:17.050 +02:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 07:29:18.065 +02:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 07:29:21.357 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 349.9464 ms
+2025-02-19 07:29:22.734 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 295.2181 ms
+2025-02-19 07:29:30.718 +02:00 [INF] Getting all Restaurants (we are in Restaurant Service )
+2025-02-19 07:29:31.169 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM [Restaurants] AS [r]
+LEFT JOIN [Dishes] AS [d] ON [r].[Id] = [d].[RestaurantId]
+ORDER BY [r].[Id]
+2025-02-19 07:29:31.489 +02:00 [INF] HTTP GET /api/Restaurants/Get-All-Restauratns responded 200 in 1030.2403 ms
+2025-02-19 07:57:40.367 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 07:57:40.515 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 07:57:40.533 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 07:57:44.095 +02:00 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 07:57:45.097 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 07:57:48.482 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 241.6845 ms
+2025-02-19 07:57:48.615 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 24.4446 ms
+2025-02-19 07:57:48.623 +02:00 [INF] HTTP GET /swagger/index.css responded 200 in 28.5115 ms
+2025-02-19 07:57:49.557 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 64.2762 ms
+2025-02-19 07:58:18.780 +02:00 [INF] HTTP POST /api/Restaurants/Create-Restaurant responded 400 in 577.6869 ms
+2025-02-19 08:43:25.679 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 08:43:25.985 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 08:43:26.050 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 08:44:01.129 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 08:44:01.406 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 08:44:01.427 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 08:44:51.531 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 08:44:51.689 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 08:44:51.708 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 08:45:27.782 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 339.3541 ms
+2025-02-19 08:45:28.265 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.5308 ms
+2025-02-19 08:45:28.273 +02:00 [INF] HTTP GET /swagger/index.css responded 200 in 86.8749 ms
+2025-02-19 08:45:29.165 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 69.7809 ms
+2025-02-19 08:46:13.968 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 08:46:14.226 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 08:46:14.247 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 08:47:13.800 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 240.8856 ms
+2025-02-19 08:47:32.230 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 11524.1995 ms
+2025-02-19 08:47:55.154 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 76.3190 ms
+2025-02-19 08:48:16.789 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:48:41.588 +02:00 [INF] Executed DbCommand (2,822ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:48:43.079 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:48:43.568 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 27156.5608 ms
+2025-02-19 08:50:47.059 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:50:47.261 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:50:50.113 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:50:50.120 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 3103.2291 ms
+2025-02-19 08:52:01.902 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 08:52:02.022 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 08:52:02.040 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 08:52:02.787 +02:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 08:52:03.438 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 08:52:06.091 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 196.9436 ms
+2025-02-19 08:52:08.318 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 4.7698 ms
+2025-02-19 08:52:09.879 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 13.7493 ms
+2025-02-19 08:52:32.777 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:53:02.803 +02:00 [INF] Executed DbCommand (81ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:53:06.629 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:53:06.673 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 47634.3041 ms
+2025-02-19 08:55:07.524 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:55:07.666 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:55:09.038 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:55:09.047 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 6407.7995 ms
+2025-02-19 08:58:24.634 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:58:24.649 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:58:25.518 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:58:25.525 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 5666.8026 ms
+2025-02-19 08:58:40.285 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:58:41.801 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:58:42.532 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:58:42.537 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 9844.5875 ms
+2025-02-19 08:59:05.767 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:59:05.778 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:59:07.766 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:59:07.770 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 2004.8630 ms
+2025-02-19 08:59:14.048 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:59:14.054 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:59:15.199 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:59:15.207 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 1158.9782 ms
+2025-02-19 08:59:33.034 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 08:59:33.197 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 08:59:33.228 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 08:59:34.088 +02:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 08:59:34.641 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 08:59:35.577 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 266.4038 ms
+2025-02-19 08:59:35.662 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 3.0233 ms
+2025-02-19 08:59:36.480 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 68.5449 ms
+2025-02-19 08:59:41.411 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 08:59:42.055 +02:00 [INF] Executed DbCommand (78ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 08:59:44.471 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 08:59:44.532 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 3522.9996 ms
+2025-02-19 09:00:12.548 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:00:12.686 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:00:53.093 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:00:53.101 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 40569.9273 ms
+2025-02-19 09:01:51.552 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 09:01:51.770 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 09:01:51.792 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 09:01:52.527 +02:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 09:01:53.088 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 09:01:54.251 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 298.8786 ms
+2025-02-19 09:01:54.360 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 7.9767 ms
+2025-02-19 09:01:55.308 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 71.1053 ms
+2025-02-19 09:01:59.270 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:02:00.174 +02:00 [INF] Executed DbCommand (75ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:02:05.263 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:02:05.329 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 6356.0286 ms
+2025-02-19 09:03:51.487 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 09:03:51.635 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 09:03:51.657 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 09:03:52.348 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 09:03:52.848 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 09:03:53.809 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 230.9475 ms
+2025-02-19 09:03:53.862 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 5.6822 ms
+2025-02-19 09:03:54.539 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 61.2740 ms
+2025-02-19 09:04:01.023 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:04:01.782 +02:00 [INF] Executed DbCommand (61ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:04:12.881 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 19
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:04:12.934 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 12319.0373 ms
+2025-02-19 09:07:50.510 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 09:07:50.667 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 09:07:50.703 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 09:07:51.618 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 09:07:52.209 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 09:07:53.118 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 207.0815 ms
+2025-02-19 09:07:53.483 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.9696 ms
+2025-02-19 09:07:54.253 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 20.8281 ms
+2025-02-19 09:08:28.121 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:08:48.587 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:08:49.735 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:08:49.786 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 21998.2376 ms
+2025-02-19 09:11:09.674 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 09:11:09.887 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 09:11:09.908 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 09:11:10.786 +02:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 09:11:11.371 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 09:11:12.455 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 262.6205 ms
+2025-02-19 09:11:12.538 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.7350 ms
+2025-02-19 09:11:13.234 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 88.8744 ms
+2025-02-19 09:12:02.675 +02:00 [INF] Deleting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:12:03.094 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:12:04.513 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Commands.DeleteRestaurant.DeleteRestaurantHandler.Handle(DeleteRestaurantCommand request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Commands\DeleteRestaurant\DeleteRestaurantHandler.cs:line 15
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`1.<>c__DisplayClass1_0.<<Handle>g__Handler|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Restaurant.API.Controllers.RestaurantsController.DeleteRestaurant(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 45
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:12:04.563 +02:00 [ERR] HTTP DELETE /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 1989.2899 ms
+2025-02-19 09:22:24.978 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 09:22:25.197 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 09:22:25.221 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 09:22:28.359 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 09:22:29.111 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 09:22:30.958 +02:00 [INF] HTTP GET /swagger responded 301 in 10.0152 ms
+2025-02-19 09:22:31.224 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 219.5133 ms
+2025-02-19 09:22:31.300 +02:00 [INF] HTTP GET /swagger/index.css responded 200 in 69.0348 ms
+2025-02-19 09:22:31.316 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 4.3633 ms
+2025-02-19 09:22:31.384 +02:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 152.6929 ms
+2025-02-19 09:22:31.436 +02:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 196.8152 ms
+2025-02-19 09:22:31.621 +02:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 389.1067 ms
+2025-02-19 09:22:32.551 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 25.8274 ms
+2025-02-19 09:23:11.418 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-19 09:23:11.670 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:23:12.107 +02:00 [INF] Executed DbCommand (56ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:23:13.370 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:23:13.424 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 2008.4919 ms
+2025-02-19 09:23:28.570 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:23:28.688 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:23:29.926 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:23:29.955 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 1390.4091 ms
+2025-02-19 09:24:52.709 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:24:52.732 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:24:54.202 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-19 09:24:54.231 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 1535.4570 ms
+2025-02-19 09:24:56.896 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.6667 ms
+2025-02-19 09:24:57.641 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 0.5939 ms
+2025-02-19 09:24:58.605 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.2738 ms
+2025-02-19 09:24:58.665 +02:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.2560 ms
+2025-02-19 09:25:12.430 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-19 09:25:12.586 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-19 09:25:12.604 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-19 09:25:13.301 +02:00 [INF] Executed DbCommand (73ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-19 09:25:14.149 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-19 09:25:15.719 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 218.0426 ms
+2025-02-19 09:25:15.794 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.8030 ms
+2025-02-19 09:25:16.639 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 18.8079 ms
+2025-02-19 09:25:19.474 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-19 09:25:19.912 +02:00 [INF] Getting Restaurant with Id : 1c11258a-da7f-492a-aec0-664322846898
+2025-02-19 09:25:20.683 +02:00 [INF] Executed DbCommand (116ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-19 09:25:22.536 +02:00 [ERR] HTTP GET /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898 responded 500 in 3065.7877 ms
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+   at Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById.GetByIdHandler.Handle(GetByIdQuery request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Restaurants\Queries\GetAllRestaurants\GetById\GetByIdHandler.cs:line 17
+   at Restaurant.API.Controllers.RestaurantsController.GetById(Guid Id) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\RestaurantsController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-02-19 09:25:31.910 +02:00 [WRN] 404 Error: Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  
+2025-02-19 09:25:31.924 +02:00 [WRN] Restaurant with that id: 1c11258a-da7f-492a-aec0-664322846898 does not exist  

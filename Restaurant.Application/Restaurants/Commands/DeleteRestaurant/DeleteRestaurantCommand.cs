@@ -2,7 +2,7 @@
 
 namespace Restaurant.Application.Restaurants.Commands.DeleteRestaurant;
 
-public class DeleteRestaurantCommand(Guid Id):IRequest<bool>
+public class DeleteRestaurantCommand(Guid Id):IRequest
 {
     public Guid id { get; } = Id;
 }

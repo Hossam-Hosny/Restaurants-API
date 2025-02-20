@@ -1,0 +1,47 @@
+2025-02-20 15:01:55.059 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-20 15:01:55.215 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-20 15:01:55.260 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-20 15:01:59.664 +02:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-20 15:02:00.443 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-20 15:02:03.814 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 411.9113 ms
+2025-02-20 15:02:03.942 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 5.2596 ms
+2025-02-20 15:02:04.980 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 33.5986 ms
+2025-02-20 15:02:48.954 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-20 15:02:49.405 +02:00 [INF] Creating new dish: {"Name":"string","Description":"string","Price":0,"KiloCalories":0,"RestaurantId":"1c11258a-da7f-492a-aec0-664322846898","$type":"CreateDishCommand"}
+2025-02-20 15:02:49.918 +02:00 [INF] Executed DbCommand (50ms) [Parameters=[@__id_0='1c11258a-da7f-492a-aec0-664322846898'], CommandType='"Text"', CommandTimeout='30']
+SELECT [r0].[Id], [r0].[Category], [r0].[ContactEmail], [r0].[ContactNumber], [r0].[Description], [r0].[HasDelivery], [r0].[Name], [r0].[Address_City], [r0].[Address_PostalCode], [r0].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__id_0
+) AS [r0]
+LEFT JOIN [Dishes] AS [d] ON [r0].[Id] = [d].[RestaurantId]
+ORDER BY [r0].[Id]
+2025-02-20 15:02:51.248 +02:00 [ERR] HTTP POST /api/Restaurants/1C11258A-DA7F-492A-AEC0-664322846898/Dishes responded 500 in 2304.8518 ms
+Restaurant.Domain.Exceptions.NotFoundException: Restaurant With that Id:1c11258a-da7f-492a-aec0-664322846898 not exist 
+   at Restaurant.Application.Dishes.Commands.CreateDish.CreateDishHandler.Handle(CreateDishCommand request, CancellationToken cancellationToken) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.Application\Dishes\Commands\CreateDish\CreateDishHandler.cs:line 19
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`1.<>c__DisplayClass1_0.<<Handle>g__Handler|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Restaurant.API.Controllers.DishesController.CreateDish(Guid restaurantId, CreateDishCommand command) in E:\Building DotNET 8 APIs in Clean Architecture, user Identity system and Azure deployment using CICD + practical exercises\Restaurants\Restaurant.API\Controllers\DishesController.cs:line 17
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-02-20 15:02:51.571 +02:00 [WRN] 404 Error: Restaurant With that Id:1c11258a-da7f-492a-aec0-664322846898 not exist 
+2025-02-20 15:02:51.574 +02:00 [WRN] Restaurant With that Id:1c11258a-da7f-492a-aec0-664322846898 not exist 

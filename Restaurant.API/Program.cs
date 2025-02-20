@@ -1,6 +1,9 @@
+using Restaurant.API.Middlewares;
 using Restaurant.Application.Extensions;
 using Restaurant.Infrastructure.Extensions;
 using Restaurant.Infrastructure.Seeders;
+using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +22,14 @@ builder.Services.AddInfrastrucdure(builder.Configuration);
 // Adding Services of Application Layer 
 builder.Services.AddApplicationServices();
 
+builder.Host.UseSerilog((context,configuration) =>
+{
+    configuration.ReadFrom.Configuration(context.Configuration);
+});
+
+// registering the  handle middleware
+builder.Services.AddScoped<ErrorHandlingMiddleware>();
+builder.Services.AddScoped<RequestTimeLoggingMiddleware>();
 
 
 
@@ -28,11 +39,13 @@ var scope = app.Services.CreateScope();
 var seeder = scope.ServiceProvider.GetRequiredService<IRestaurantSeeder>();
 await seeder.Seed();
 
+app.UseMiddleware<ErrorHandlingMiddleware>();
+app.UseMiddleware<RequestTimeLoggingMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
-}
+app.UseMiddleware<ErrorHandlingMiddleware>();
+app.UseSerilogRequestLogging();
+
+
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();

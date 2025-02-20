@@ -5,6 +5,48 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Restaurants/{restaurantId}/Dishes": {
+      "post": {
+        "tags": [
+          "Dishes"
+        ],
+        "parameters": [
+          {
+            "name": "restaurantId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDishCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDishCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDishCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Restaurants/Get-All-Restauratns": {
       "get": {
         "tags": [
@@ -135,6 +177,33 @@
   },
   "components": {
     "schemas": {
+      "CreateDishCommand": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "kiloCalories": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "restaurantId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateRestaurantCommand": {
         "type": "object",
         "properties": {

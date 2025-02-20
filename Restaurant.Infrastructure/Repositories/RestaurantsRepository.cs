@@ -2,7 +2,6 @@
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.Repositories;
 using Restaurant.Infrastructure.DbContexts;
-using System.ComponentModel.DataAnnotations;
 
 namespace Restaurant.Infrastructure.Repositories;
 

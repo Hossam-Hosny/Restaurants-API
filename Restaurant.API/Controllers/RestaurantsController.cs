@@ -25,7 +25,7 @@ namespace Restaurant.API.Controllers
         public async Task<IActionResult> GetById([FromRoute] Guid Id)
         {
             var result = await _mediator.Send(new GetByIdQuery(Id));
-            if (result is null) { return NotFound($"No Restaurant with that id: {Id}"); }
+           
             return Ok(result);
         }
 
@@ -42,11 +42,11 @@ namespace Restaurant.API.Controllers
         public async Task<IActionResult> DeleteRestaurant( [FromRoute] Guid Id)
         {
 
-            var isDeleted = await _mediator.Send(new DeleteRestaurantCommand(Id)); 
+            await _mediator.Send(new DeleteRestaurantCommand(Id)); 
 
-            if (isDeleted) { return NoContent(); }
+         return NoContent(); 
 
-            return NotFound();
+          
 
         }
 
@@ -54,11 +54,11 @@ namespace Restaurant.API.Controllers
         public async Task<IActionResult> UpdateRestaurant( [FromRoute] Guid Id ,[FromBody] UpdateRestaurantCommand model)
         {
             model.Id = Id;
-            var isUpdated = await _mediator.Send(model);
+            await _mediator.Send(model);
 
-            if (isUpdated) { return NoContent(); }
+             return NoContent(); 
 
-            return NotFound($"Restaurant with that Id {Id} is not exist ");
+            
 
 
         }

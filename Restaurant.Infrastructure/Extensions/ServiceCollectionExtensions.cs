@@ -16,11 +16,13 @@ namespace Restaurant.Infrastructure.Extensions
         {
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(config.GetConnectionString("DevelopmentConnectionString"));
+                options.UseSqlServer(config.GetConnectionString("DevelopmentConnectionString"))
+                .EnableSensitiveDataLogging();
             });
 
             services.AddScoped<IRestaurantSeeder, RestaurantSeeder>();
             services.AddScoped<IRestaurantsRepository, RestaurantsRepository>();
+            services.AddScoped<IDishRepository, DishesRepository>();
         
         
         
