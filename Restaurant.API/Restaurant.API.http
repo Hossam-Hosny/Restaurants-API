@@ -1,5 +1,5 @@
 @Restaurant.API_HostAddress = http://localhost:5180
-
+@token =CfDJ8BTfsDXXJfBEvyjkSgvmouYH_UeJZ7ishFmOsPLhNUuOBW_Yk-qbkv7sgV-D0d3d2ZwXHpdyUtczi1gYB6TyoQz6Is-sa6eRSNn8eomH6FxeCtPfcn57by8JupngLM65U4qOBcbTJHA_P9evX0dSGRSXr7ejzplx3y2C6ZzsQdrT53zSAu_fCDRHJ01A4tdNr3pxhVbK44NqAEOtJMbszHfQqncrbZMkST5F_z52HrB9Hm7qFqiD2VaRlKcAOUU4GZSZeXKGUM-kYDXqkL4zoCIH91Rgeo1R8tFJDu19S4waxLWhHoqEl43kFq8jyykBjXH5qI0A4W1grZ1uuMc_Msv8tkeAjF9omfQ_1akiSAuAa5m1amh6ziKZVk_aGEqvdiGN2UDqc9t8Ruy5bVFcAhZxay3v06F0Slx8AvkIBp8c_fM6fpDbLTzctJV8v8f0JTWCbFWW0C5tnXh9zeavmxs3JZ33D3iniqdTltoG6Mdh_I-pBbsLnBWb6Egelp-HzvPWNBJFd6DMawZWU2H4zuYsHqQc7IX2yJ8PgQ705avakPWEygDk7SoBF4Yc5N6xRmR5Qn2lxadusWOEBeHblTXOPQ5czUa10GNe6j1dvOxD3Yp2mMl0OiRcV7EiCEjBl9pAqxrFzQ0LXW50OiyM--UBsreCD73LOFHxwBJrcFLxbf_O3bxf9VBFUHGVGC5y_3robKgAgDXDT2Xo2aSM8Dc
 #
 
 GET {{Restaurant.API_HostAddress}}/api/restaurants/Get-All-Restauratns
@@ -55,5 +55,9 @@ Content-Type: application/json
 {
   //CreateDishCommand
 }
+
+###
+
+GET {{Restaurant.API_HostAddress}}/api/restaurants/Get-All-Restauratns
 
 ###

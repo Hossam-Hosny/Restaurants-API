@@ -2,6 +2,7 @@
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 using Restaurant.Application.Restaurants;
+using Restaurant.Application.User;
 using Restaurant.Domain.Entities;
 using System.ComponentModel.Design;
 
@@ -23,6 +24,10 @@ public static class ServiceCollectionExtensions
         // Adding the Fluent Validation to the IOC
         services.AddValidatorsFromAssembly(ApplicationAssembly)
             .AddFluentValidationAutoValidation();
+
+        services.AddScoped<IUserContext, UserContext>();
+        services.AddHttpContextAccessor();
+
 
     }
 

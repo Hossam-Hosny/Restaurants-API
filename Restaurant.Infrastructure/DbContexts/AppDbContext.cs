@@ -1,11 +1,12 @@
 ﻿
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Restaurant.Domain.Entities;
 
 namespace Restaurant.Infrastructure.DbContexts
 {
-    internal class AppDbContext(DbContextOptions<AppDbContext> options): DbContext(options)
+    internal class AppDbContext(DbContextOptions<AppDbContext> options): IdentityDbContext<User>(options)
     {
         
       
