@@ -1,0 +1,360 @@
+2025-02-22 12:13:09.231 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-22 12:13:09.435 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-22 12:13:09.477 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-22 12:13:16.877 +02:00 [INF] Executed DbCommand (992ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-22 12:13:17.654 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:13:17.676 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:13:59.130 +02:00 [INF] Executed DbCommand (68ms) [Parameters=[@p0='05f610cd-c9ea-49f1-abd1-c6b9366ea77a' (Nullable = false) (Size = 450), @p1=NULL (Size = 4000), @p2='User' (Size = 256), @p3=NULL (Size = 256), @p4='103126ad-ca8c-4222-83ea-f9e0836e376c' (Nullable = false) (Size = 450), @p5=NULL (Size = 4000), @p6='Admin' (Size = 256), @p7=NULL (Size = 256), @p8='238d5d5a-2e90-4f8b-bdb6-e46bf623a3d0' (Nullable = false) (Size = 450), @p9=NULL (Size = 4000), @p10='Owner' (Size = 256), @p11=NULL (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3),
+(@p4, @p5, @p6, @p7),
+(@p8, @p9, @p10, @p11);
+2025-02-22 12:14:02.807 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 443.3945 ms
+2025-02-22 12:14:02.969 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 133.9466 ms
+2025-02-22 12:14:03.878 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 165.4880 ms
+2025-02-22 12:16:18.399 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-22 12:16:18.586 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-22 12:16:18.602 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-22 12:16:19.371 +02:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-22 12:16:20.072 +02:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:16:20.104 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:16:22.427 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.6661 ms
+2025-02-22 12:16:22.388 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 226.1743 ms
+2025-02-22 12:16:23.423 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 153.0076 ms
+2025-02-22 12:16:54.025 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-22 12:16:54.697 +02:00 [INF] Executed DbCommand (147ms) [Parameters=[@__normalizedUserName_0='ADMIN@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:16:55.127 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='854467d8-dac9-4e96-be87-3aba44af3a2b' (Nullable = false) (Size = 450), @p1='0', @p2='09ec0add-072f-4acf-af22-90048ccfbeb4' (Size = 4000), @p3=NULL (DbType = Date), @p4='Admin@test.com' (Size = 256), @p5='False', @p6='True', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='ADMIN@TEST.COM' (Size = 256), @p10='ADMIN@TEST.COM' (Size = 256), @p11='AQAAAAIAAYagAAAAEM/pDqj3s3CBStiQwVhog0vNAex4cGj4FsIxdVzXliZqkBrt9jZiy1YUY8tRC2M3ZQ==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='BNVX5RHOWJ6EW4COJD67NJLQVPJ55UMB' (Size = 4000), @p15='False', @p16='Admin@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2025-02-22 12:16:55.177 +02:00 [INF] HTTP POST /api/Identity/register responded 200 in 1155.5074 ms
+2025-02-22 12:17:14.950 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='OWNER@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:17:14.966 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='c5674a31-4dd5-4828-820a-964e34fa4049' (Nullable = false) (Size = 450), @p1='0', @p2='8c9d4a16-db14-4fd1-bcb6-f62ac831e148' (Size = 4000), @p3=NULL (DbType = Date), @p4='Owner@test.com' (Size = 256), @p5='False', @p6='True', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='OWNER@TEST.COM' (Size = 256), @p10='OWNER@TEST.COM' (Size = 256), @p11='AQAAAAIAAYagAAAAELzmeLdBkw41TFgETWBSAU7pGypWqe9a46KYvKwNqmX8SIo++tovpYE5spD20NF4bQ==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='JR56UACA5SHTWZOJU57MGGMWAQPJS3QQ' (Size = 4000), @p15='False', @p16='Owner@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2025-02-22 12:17:14.978 +02:00 [INF] HTTP POST /api/Identity/register responded 200 in 343.4567 ms
+2025-02-22 12:17:24.623 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedUserName_0='USER@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:17:24.647 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='06c2d1eb-23b1-49b5-b6d4-aaae17d4b415' (Nullable = false) (Size = 450), @p1='0', @p2='e30df059-0896-4208-8373-1b3e1e61d096' (Size = 4000), @p3=NULL (DbType = Date), @p4='User@test.com' (Size = 256), @p5='False', @p6='True', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='USER@TEST.COM' (Size = 256), @p10='USER@TEST.COM' (Size = 256), @p11='AQAAAAIAAYagAAAAEL7O5WG+pxgFd7DxQv0r+LnqWphDkwu19KBX3izLRM7XGwPU02vJf4Xtp2p5MNt7vA==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='IMB4XQIMJJRDQ3447DCU6L7XPCSWTMV4' (Size = 4000), @p15='False', @p16='User@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2025-02-22 12:17:24.654 +02:00 [INF] HTTP POST /api/Identity/register responded 200 in 250.3011 ms
+2025-02-22 12:21:03.852 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-22 12:21:04.103 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-22 12:21:04.124 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-22 12:21:04.846 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-22 12:21:05.398 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:21:05.427 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:21:08.062 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 201.5603 ms
+2025-02-22 12:21:08.107 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 2.7678 ms
+2025-02-22 12:21:09.057 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 149.8908 ms
+2025-02-22 12:21:50.417 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-22 12:21:50.800 +02:00 [INF] Executed DbCommand (47ms) [Parameters=[@__normalizedUserName_0='ADMIN@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:21:51.393 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='854467d8-dac9-4e96-be87-3aba44af3a2b' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-02-22 12:21:51.480 +02:00 [INF] HTTP POST /api/Identity/login responded 200 in 1065.8443 ms
+2025-02-22 12:27:56.789 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-22 12:27:56.949 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-22 12:27:56.982 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-22 12:27:57.755 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-22 12:27:57.769 +02:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-02-22 12:27:57.799 +02:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-02-22 12:27:57.901 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-02-22 12:27:57.912 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-22 12:27:57.912 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-22 12:27:57.917 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-22 12:27:57.926 +02:00 [INF] Applying migration '20250215094132_Initial'.
+2025-02-22 12:27:57.960 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Restaurants] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Category] nvarchar(max) NOT NULL,
+    [HasDelivery] bit NOT NULL,
+    [ContactEmail] nvarchar(max) NULL,
+    [ContactNumber] nvarchar(max) NULL,
+    [Address_City] nvarchar(max) NULL,
+    [Address_Street] nvarchar(max) NULL,
+    [Address_PostalCode] nvarchar(max) NULL,
+    CONSTRAINT [PK_Restaurants] PRIMARY KEY ([Id])
+);
+2025-02-22 12:27:57.964 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Dishes] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Price] decimal(18,2) NOT NULL,
+    [RestaurantId] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_Dishes] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Dishes_Restaurants_RestaurantId] FOREIGN KEY ([RestaurantId]) REFERENCES [Restaurants] ([Id]) ON DELETE CASCADE
+);
+2025-02-22 12:27:57.969 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Dishes_RestaurantId] ON [Dishes] ([RestaurantId]);
+2025-02-22 12:27:57.973 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250215094132_Initial', N'9.0.2');
+2025-02-22 12:27:57.973 +02:00 [INF] Applying migration '20250215101846_Adding_KiloCalories_Column_To_DishTable'.
+2025-02-22 12:27:57.994 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Dishes] ADD [KiloCalories] int NULL;
+2025-02-22 12:27:57.995 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250215101846_Adding_KiloCalories_Column_To_DishTable', N'9.0.2');
+2025-02-22 12:27:57.995 +02:00 [INF] Applying migration '20250221052146_IdentityAdded'.
+2025-02-22 12:27:58.049 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2025-02-22 12:27:58.052 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUsers] (
+    [Id] nvarchar(450) NOT NULL,
+    [UserName] nvarchar(256) NULL,
+    [NormalizedUserName] nvarchar(256) NULL,
+    [Email] nvarchar(256) NULL,
+    [NormalizedEmail] nvarchar(256) NULL,
+    [EmailConfirmed] bit NOT NULL,
+    [PasswordHash] nvarchar(max) NULL,
+    [SecurityStamp] nvarchar(max) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    [PhoneNumber] nvarchar(max) NULL,
+    [PhoneNumberConfirmed] bit NOT NULL,
+    [TwoFactorEnabled] bit NOT NULL,
+    [LockoutEnd] datetimeoffset NULL,
+    [LockoutEnabled] bit NOT NULL,
+    [AccessFailedCount] int NOT NULL,
+    CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+);
+2025-02-22 12:27:58.061 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoleClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [RoleId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoleClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetRoleClaims_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE
+);
+2025-02-22 12:27:58.066 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserClaims] (
+    [Id] int NOT NULL IDENTITY,
+    [UserId] nvarchar(450) NOT NULL,
+    [ClaimType] nvarchar(max) NULL,
+    [ClaimValue] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserClaims] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetUserClaims_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-02-22 12:27:58.072 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserLogins] (
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [ProviderKey] nvarchar(450) NOT NULL,
+    [ProviderDisplayName] nvarchar(max) NULL,
+    [UserId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserLogins] PRIMARY KEY ([LoginProvider], [ProviderKey]),
+    CONSTRAINT [FK_AspNetUserLogins_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-02-22 12:27:58.075 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserRoles] (
+    [UserId] nvarchar(450) NOT NULL,
+    [RoleId] nvarchar(450) NOT NULL,
+    CONSTRAINT [PK_AspNetUserRoles] PRIMARY KEY ([UserId], [RoleId]),
+    CONSTRAINT [FK_AspNetUserRoles_AspNetRoles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [AspNetRoles] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_AspNetUserRoles_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-02-22 12:27:58.078 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetUserTokens] (
+    [UserId] nvarchar(450) NOT NULL,
+    [LoginProvider] nvarchar(450) NOT NULL,
+    [Name] nvarchar(450) NOT NULL,
+    [Value] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetUserTokens] PRIMARY KEY ([UserId], [LoginProvider], [Name]),
+    CONSTRAINT [FK_AspNetUserTokens_AspNetUsers_UserId] FOREIGN KEY ([UserId]) REFERENCES [AspNetUsers] ([Id]) ON DELETE CASCADE
+);
+2025-02-22 12:27:58.079 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetRoleClaims_RoleId] ON [AspNetRoleClaims] ([RoleId]);
+2025-02-22 12:27:58.082 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [RoleNameIndex] ON [AspNetRoles] ([NormalizedName]) WHERE [NormalizedName] IS NOT NULL;
+2025-02-22 12:27:58.083 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserClaims_UserId] ON [AspNetUserClaims] ([UserId]);
+2025-02-22 12:28:00.470 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserLogins_UserId] ON [AspNetUserLogins] ([UserId]);
+2025-02-22 12:28:00.471 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_AspNetUserRoles_RoleId] ON [AspNetUserRoles] ([RoleId]);
+2025-02-22 12:28:00.472 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [EmailIndex] ON [AspNetUsers] ([NormalizedEmail]);
+2025-02-22 12:28:00.473 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [UserNameIndex] ON [AspNetUsers] ([NormalizedUserName]) WHERE [NormalizedUserName] IS NOT NULL;
+2025-02-22 12:28:00.475 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250221052146_IdentityAdded', N'9.0.2');
+2025-02-22 12:28:00.476 +02:00 [INF] Applying migration '20250221180320_UserAdditionalProperties'.
+2025-02-22 12:28:00.510 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AspNetUsers] ADD [DateOfBirth] date NULL;
+2025-02-22 12:28:00.511 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [AspNetUsers] ADD [Nationality] nvarchar(max) NULL;
+2025-02-22 12:28:00.512 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250221180320_UserAdditionalProperties', N'9.0.2');
+2025-02-22 12:28:00.520 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-02-22 12:31:53.128 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-22 12:31:53.426 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-22 12:31:53.457 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-22 12:31:54.229 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-22 12:31:54.840 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:31:55.378 +02:00 [INF] Executed DbCommand (110ms) [Parameters=[@p0='0963a1cc-6838-4f07-bf01-08dd532c20b5', @p1='Fast Food' (Nullable = false) (Size = 4000), @p2='Contact@Contact.com' (Size = 4000), @p3=NULL (Size = 4000), @p4='This is a description' (Nullable = false) (Size = 4000), @p5='True', @p6='Mackdonald' (Nullable = false) (Size = 4000), @p7='Huawi' (Size = 4000), @p8='this is a Postal Code ' (Size = 4000), @p9='This is a London Street ' (Size = 4000), @p10='21ef2422-4232-4979-bf00-08dd532c20b5', @p11='Fast Food' (Nullable = false) (Size = 4000), @p12='Contact@Contact.com' (Size = 4000), @p13=NULL (Size = 4000), @p14='This is a description' (Nullable = false) (Size = 4000), @p15='True', @p16='KFC' (Nullable = false) (Size = 4000), @p17='London' (Size = 4000), @p18='this is a Postal Code ' (Size = 4000), @p19='This is a London Street ' (Size = 4000), @p20='This is a description' (Nullable = false) (Size = 4000), @p21=NULL (DbType = Int32), @p22='Nashville Hot Chicken' (Nullable = false) (Size = 4000), @p23='10.30' (Precision = 18) (Scale = 2), @p24='21ef2422-4232-4979-bf00-08dd532c20b5', @p25='This is a description' (Nullable = false) (Size = 4000), @p26=NULL (DbType = Int32), @p27='Chicken Nuggets' (Nullable = false) (Size = 4000), @p28='5.5' (Precision = 18) (Scale = 2), @p29='21ef2422-4232-4979-bf00-08dd532c20b5', @p30='This is a description' (Nullable = false) (Size = 4000), @p31=NULL (DbType = Int32), @p32='Mackdonalld Hot Chicken' (Nullable = false) (Size = 4000), @p33='10.30' (Precision = 18) (Scale = 2), @p34='0963a1cc-6838-4f07-bf01-08dd532c20b5', @p35='This is a description' (Nullable = false) (Size = 4000), @p36=NULL (DbType = Int32), @p37='Mackdonald Nuggets' (Nullable = false) (Size = 4000), @p38='5.5' (Precision = 18) (Scale = 2), @p39='0963a1cc-6838-4f07-bf01-08dd532c20b5'], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Restaurants] ([Id], [Category], [ContactEmail], [ContactNumber], [Description], [HasDelivery], [Name], [Address_City], [Address_PostalCode], [Address_Street])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9),
+(@p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+MERGE [Dishes] USING (
+VALUES (@p20, @p21, @p22, @p23, @p24, 0),
+(@p25, @p26, @p27, @p28, @p29, 1),
+(@p30, @p31, @p32, @p33, @p34, 2),
+(@p35, @p36, @p37, @p38, @p39, 3)) AS i ([Description], [KiloCalories], [Name], [Price], [RestaurantId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([Description], [KiloCalories], [Name], [Price], [RestaurantId])
+VALUES (i.[Description], i.[KiloCalories], i.[Name], i.[Price], i.[RestaurantId])
+OUTPUT INSERTED.[Id], i._Position;
+2025-02-22 12:31:55.456 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-02-22 12:31:59.096 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='27e82d17-d5b6-4135-8bf7-e27966a53594' (Nullable = false) (Size = 450), @p1=NULL (Size = 4000), @p2='User' (Size = 256), @p3=NULL (Size = 256), @p4='77c1be72-83c6-43ce-a7c2-44b36acf3ff5' (Nullable = false) (Size = 450), @p5=NULL (Size = 4000), @p6='Admin' (Size = 256), @p7=NULL (Size = 256), @p8='fb8c7d9e-84ff-4906-9ee4-53e991f86444' (Nullable = false) (Size = 450), @p9=NULL (Size = 4000), @p10='Owner' (Size = 256), @p11=NULL (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3),
+(@p4, @p5, @p6, @p7),
+(@p8, @p9, @p10, @p11);
+2025-02-22 12:32:02.730 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 275.4432 ms
+2025-02-22 12:32:02.751 +02:00 [INF] HTTP GET /swagger/index.js responded 200 in 8.2525 ms
+2025-02-22 12:32:03.860 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 130.6175 ms
+2025-02-22 12:32:46.749 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-02-22 12:32:47.486 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='ADMIN@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:32:47.651 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='c0bdf2b3-b8e8-4800-9661-ea1686267927' (Nullable = false) (Size = 450), @p1='0', @p2='03c1af52-a14d-4ec4-b215-d8106fcb605b' (Size = 4000), @p3=NULL (DbType = Date), @p4='Admin@test.com' (Size = 256), @p5='False', @p6='True', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='ADMIN@TEST.COM' (Size = 256), @p10='ADMIN@TEST.COM' (Size = 256), @p11='AQAAAAIAAYagAAAAED1Dz4H5qsXxx7KhMaALY2POiDqEbjn41g3sGB8vNHSNyYoyYJRxn+mb3/Ra/eYeQA==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='Q4XPECX2BAEAZ3F5H6G32SRMX3JDTAOB' (Size = 4000), @p15='False', @p16='Admin@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2025-02-22 12:32:47.705 +02:00 [INF] HTTP POST /api/Identity/register responded 200 in 959.5096 ms
+2025-02-22 12:33:01.514 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedUserName_0='OWNER@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:33:01.526 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='9221fa30-b0af-43f4-a19d-fddbbe66db36' (Nullable = false) (Size = 450), @p1='0', @p2='065d0c4b-bacf-4959-90b6-01ea0b7b7b25' (Size = 4000), @p3=NULL (DbType = Date), @p4='Owner@test.com' (Size = 256), @p5='False', @p6='True', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='OWNER@TEST.COM' (Size = 256), @p10='OWNER@TEST.COM' (Size = 256), @p11='AQAAAAIAAYagAAAAEJY8o/V/c/jUwWCh+tYudRT4fnx273eoV1McaV6CFoNJ0WiNng3Zuho9Sd4YNIzTUg==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='YEE3E5GJXGGYFYS7372EVHWOLHRV4KWW' (Size = 4000), @p15='False', @p16='Owner@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2025-02-22 12:33:01.535 +02:00 [INF] HTTP POST /api/Identity/register responded 200 in 537.8761 ms
+2025-02-22 12:33:09.024 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='USER@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:33:09.033 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='28a3a5d0-bc99-4f04-ad28-6466395563ed' (Nullable = false) (Size = 450), @p1='0', @p2='caa05800-7c33-4fe5-8021-6ef0a7a8f508' (Size = 4000), @p3=NULL (DbType = Date), @p4='User@test.com' (Size = 256), @p5='False', @p6='True', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='USER@TEST.COM' (Size = 256), @p10='USER@TEST.COM' (Size = 256), @p11='AQAAAAIAAYagAAAAED/g3Rz0wAa3A43Pvkty4gJ5+FtLcq6llFMUDlsP2pn+XmfV0yXDhmfkITSlfQJNqg==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='26FHTZXKETI6I3IJBL6YZY4FY4FM5X24' (Size = 4000), @p15='False', @p16='User@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [DateOfBirth], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2025-02-22 12:33:09.041 +02:00 [INF] HTTP POST /api/Identity/register responded 200 in 187.0282 ms
+2025-02-22 12:33:13.681 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='USER@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DateOfBirth], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-02-22 12:33:13.764 +02:00 [INF] HTTP POST /api/Identity/register responded 400 in 284.5948 ms
+2025-02-22 12:33:50.457 +02:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-02-22 12:33:50.594 +02:00 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2025-02-22 12:33:50.621 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
