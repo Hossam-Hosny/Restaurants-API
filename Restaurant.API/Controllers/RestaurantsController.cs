@@ -6,6 +6,8 @@ using Restaurant.Application.Restaurants.Commands.DeleteRestaurant;
 using Restaurant.Application.Restaurants.Commands.UpdateRestaurant;
 using Restaurant.Application.Restaurants.Queries.GetAllRestaurants;
 using Restaurant.Application.Restaurants.Queries.GetAllRestaurants.GetById;
+using Restaurant.Domain.Constants;
+using Restaurant.Infrastructure.Authorization;
 
 
 namespace Restaurant.API.Controllers
@@ -26,6 +28,7 @@ namespace Restaurant.API.Controllers
         }
 
         [HttpGet("{Id:guid}")]
+        [Authorize(Policy = PolicyNames.HasNationality)]
         public async Task<IActionResult> GetById([FromRoute] Guid Id)
         {
 
@@ -37,6 +40,7 @@ namespace Restaurant.API.Controllers
         }
 
         [HttpPost("Create-Restaurant")]
+        [Authorize(Roles =UserRoles.Owner)]
         public async Task<IActionResult> CreateRestaurant([FromBody] CreateRestaurantCommand dto )
         {
 

@@ -47,17 +47,4 @@ PATCH {{Restaurant.API_HostAddress}}/api/Restaurants/{{Id}}content-type = applic
   Description :"This is a description",
   HasDelivery:false
 }
-###
 
-POST {{Restaurant.API_HostAddress}}/api/Restaurants/{restaurantId}/dishes
-Content-Type: application/json
-
-{
-  //CreateDishCommand
-}
-
-###
-
-GET {{Restaurant.API_HostAddress}}/api/restaurants/Get-All-Restauratns
-
-###

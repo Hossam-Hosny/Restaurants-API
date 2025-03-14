@@ -214,7 +214,13 @@ namespace Restaurant.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("OwnerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("OwnerId");
 
                     b.ToTable("Restaurants");
                 });
@@ -352,6 +358,12 @@ namespace Restaurant.Infrastructure.Migrations
 
             modelBuilder.Entity("Restaurant.Domain.Entities.RestaurantModel", b =>
                 {
+                    b.HasOne("Restaurant.Domain.Entities.User", "Owner")
+                        .WithMany("OwnedRestaurants")
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.OwnsOne("Restaurant.Domain.Entities.Address", "Address", b1 =>
                         {
                             b1.Property<Guid>("RestaurantModelId")
@@ -375,11 +387,18 @@ namespace Restaurant.Infrastructure.Migrations
                         });
 
                     b.Navigation("Address");
+
+                    b.Navigation("Owner");
                 });
 
             modelBuilder.Entity("Restaurant.Domain.Entities.RestaurantModel", b =>
                 {
                     b.Navigation("Dishes");
+                });
+
+            modelBuilder.Entity("Restaurant.Domain.Entities.User", b =>
+                {
+                    b.Navigation("OwnedRestaurants");
                 });
 #pragma warning restore 612, 618
         }

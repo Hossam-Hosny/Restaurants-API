@@ -33,6 +33,11 @@ namespace Restaurant.Infrastructure.DbContexts
 
 
 
+            modelBuilder.Entity<User>()
+                .HasMany(o => o.OwnedRestaurants)
+                .WithOne(r => r.Owner)
+                .HasForeignKey(r => r.OwnerId);
+
         }
 
 
