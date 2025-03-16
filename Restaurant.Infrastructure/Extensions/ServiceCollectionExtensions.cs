@@ -8,6 +8,7 @@ using Restaurant.Domain.Entities;
 using Restaurant.Domain.Repositories;
 using Restaurant.Infrastructure.Authorization;
 using Restaurant.Infrastructure.Authorization.Requirements;
+using Restaurant.Infrastructure.Authorization.Services;
 using Restaurant.Infrastructure.DbContexts;
 using Restaurant.Infrastructure.Repositories;
 using Restaurant.Infrastructure.Seeders;
@@ -42,7 +43,7 @@ namespace Restaurant.Infrastructure.Extensions
 
 
             services.AddScoped<IAuthorizationHandler, MinimumAgeRequirementHandler>();
-        
+            services.AddScoped<IRestaurantAuthorizationService, RestaurantAuthorizationService>();
         }
 
     }

@@ -1,7 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
+using Restaurant.Domain.Constants;
 using Restaurant.Domain.Exceptions;
+using Restaurant.Domain.Interfaces;
 
 
 namespace Restaurant.Application.User.Commands.UpdateUserDetails;
@@ -16,7 +18,9 @@ public class UpdateUserDetailsCommandHandler(ILogger<UpdateUserDetailsCommandHan
         _logger.LogInformation("Updating user: {UserId}, with {@Request}", user!.Id, request);
 
         var dbUser = await userStore.FindByIdAsync(user!.Id, cancellationToken)
-            ?? throw new NotFoundException("not exist ");
+        ?? throw new NotFoundException("not exist ");
+
+        
 
         dbUser.Nationality = request.Nationality;
         dbUser.DateOfBirth = request.DateOfBirth;
