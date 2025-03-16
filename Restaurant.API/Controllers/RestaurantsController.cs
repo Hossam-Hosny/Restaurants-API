@@ -19,7 +19,8 @@ namespace Restaurant.API.Controllers
     {
 
         [HttpGet("Get-All-Restauratns")]
-        [AllowAnonymous]
+        //[AllowAnonymous]
+        [Authorize(Policy =PolicyNames.CreatedAtLeast2Restaurants)]
         
         public async Task<IActionResult> GetAll()
         {
