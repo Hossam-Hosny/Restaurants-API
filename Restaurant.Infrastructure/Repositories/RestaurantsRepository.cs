@@ -13,6 +13,27 @@ internal class RestaurantsRepository(AppDbContext _db) : IRestaurantsRepository
         return restaurants;
     }
 
+    public async Task <(IEnumerable<RestaurantModel>,int)> GetAllMatchingAsync(string? SearchPhrase, int PageNumber, int PageSize)
+    {
+        var searchPhraseLower = SearchPhrase?.ToLower();
+
+        var baseQuery = _db
+            .Restaurants
+            .Where(r => searchPhraseLower == null ||
+            (r.Name.ToLower().Contains(searchPhraseLower)
+            || r.Description.ToLower().Contains(searchPhraseLower)));
+
+
+        var totalCount =await baseQuery.CountAsync();
+
+        var restaurants = await baseQuery
+            .Skip(PageSize * (PageNumber-1))
+            .Take(PageSize) 
+
+            .ToListAsync();
+        return (restaurants , totalCount );
+    }
+
     public async Task<RestaurantModel?> GeyRestaurantById(Guid id)
     {
         RestaurantModel? Restaurant = await _db.Restaurants

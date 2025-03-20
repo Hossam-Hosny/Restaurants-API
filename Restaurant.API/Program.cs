@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Adding Services of Infrastructure Layer 
 
-builder.Services.AddInfrastrucdure(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 
 // Adding Services of Application Layer 
 builder.Services.AddApplicationServices();

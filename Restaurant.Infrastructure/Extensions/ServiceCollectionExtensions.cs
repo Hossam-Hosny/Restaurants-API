@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Restaurant.Application.User;
 using Restaurant.Domain.Entities;
 using Restaurant.Domain.Repositories;
 using Restaurant.Infrastructure.Authorization;
@@ -18,7 +19,7 @@ namespace Restaurant.Infrastructure.Extensions
     public static class ServiceCollectionExtensions
     {
 
-        public static void AddInfrastrucdure(this IServiceCollection services,IConfiguration config)
+        public static void AddInfrastructure(this IServiceCollection services,IConfiguration config)
         {
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -47,7 +48,9 @@ namespace Restaurant.Infrastructure.Extensions
 
             services.AddScoped<IAuthorizationHandler, MinimumAgeRequirementHandler>();
             services.AddScoped<IAuthorizationHandler, CreateMultipleRestaurantsRequirementHandler>();
+            // services.AddScoped<IRestaurantAuthorizationService, RestaurantAuthorizationService>();
             services.AddScoped<IRestaurantAuthorizationService, RestaurantAuthorizationService>();
+            services.AddScoped<UserContext>();
         }
 
     }

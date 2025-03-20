@@ -12,19 +12,19 @@ using Restaurant.Infrastructure.Authorization;
 
 namespace Restaurant.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]")]  
     [ApiController]
     [Authorize]
     public class RestaurantsController(IMediator _mediator) : ControllerBase
     {
 
         [HttpGet("Get-All-Restauratns")]
-        //[AllowAnonymous]
-        [Authorize(Policy =PolicyNames.CreatedAtLeast2Restaurants)]
+        [AllowAnonymous]
+        //[Authorize(Policy =PolicyNames.CreatedAtLeast2Restaurants)]
         
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] GetAllRestaurantsQuery query )
         {
-            var result =await _mediator.Send(new GetAllRestaurantsQuery());
+            var result =await _mediator.Send(query);
             return Ok(result);
         }
 

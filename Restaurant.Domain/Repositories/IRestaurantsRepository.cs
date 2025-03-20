@@ -9,4 +9,5 @@ public interface IRestaurantsRepository
     Task<Guid> CreateRestaurant(RestaurantModel dto);
     Task DeleteRestaurant(RestaurantModel model);
     Task UpdateRestaurant(RestaurantModel model);
+    Task<(IEnumerable<RestaurantModel>,int)> GetAllMatchingAsync(string? SearchPhrase , int PageNumber, int PageSize);
 }
