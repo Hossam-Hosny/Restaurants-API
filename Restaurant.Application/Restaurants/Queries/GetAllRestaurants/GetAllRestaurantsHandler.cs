@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Restaurant.Application.Common;
 using Restaurant.Application.Restaurants.DTOs;
+using Restaurant.Domain.Entities;
 using Restaurant.Domain.Repositories;
 
 namespace Restaurant.Application.Restaurants.Queries.GetAllRestaurants;
@@ -13,7 +13,7 @@ public class GetAllRestaurantsHandler(ILogger<GetAllRestaurantsHandler> _Logger 
     public async Task<PageResult<RestaurantDTO>> Handle(GetAllRestaurantsQuery request, CancellationToken cancellationToken)
     {
         _Logger.LogInformation("Getting all Restaurants (we are in Restaurant Service )");
-        var (restaurants,totalCount) = await _restaurantsRepository.GetAllMatchingAsync(request.SearchPhrase,
+         (IEnumerable<RestaurantModel> restaurants,int totalCount) = await _restaurantsRepository.GetAllMatchingAsync(request.SearchPhrase,
             request.PageNumber
             ,request.PageSize
             ,request.SortBy
